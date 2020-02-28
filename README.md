@@ -18,3 +18,7 @@ It is built according to current web application standards and scores 100% in al
 4. `npm run start`
 
 It is recommended to use remote debugging while building on top of this repository. Find details from [here](https://developers.google.com/web/tools/chrome-devtools/remote-debugging)
+
+## Note about Google Analytics
+
+This repo includes Google Analytics for event tracking. To remove analytics, remove lines 153-157 from `index.html` -file and line 57-60 from `service-worker.js` -file.
