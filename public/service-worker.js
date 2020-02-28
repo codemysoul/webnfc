@@ -14,7 +14,7 @@ var cacheFiles = [
     '/assets/guide.png',
     '/manifest.webmanifest',
     '/assets/splash/manifest-icon-192.png',
-    '/assets/splash/manifest-icon-512.png',
+    '/assets/splash/manifest-icon-512.png'
 ]
 
 self.addEventListener('install', function (e) {
@@ -54,8 +54,8 @@ self.addEventListener('activate', function (e) {
 
 self.addEventListener('fetch', function (e) {
 
-    // Analytics should not be cached
-    if (e.request.url.includes('__') || e.request.url.includes('googletagmanager') || e.request.url.includes('google-analytics')) {
+    // Analytics, fonts should not be cached
+    if (e.request.url.includes('__') || e.request.url.includes('googletagmanager') || e.request.url.includes('google-analytics') || e.request.url.includes('fonts.gstatic.com')) {
         return false;
     }
 
