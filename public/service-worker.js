@@ -54,6 +54,11 @@ self.addEventListener('activate', function (e) {
 
 self.addEventListener('fetch', function (e) {
 
+    // Analytics should not be cached
+    if (e.request.url.includes('__') || e.request.url.includes('googletagmanager') || e.request.url.includes('google-analytics')) {
+        return false;
+    }
+
     // e.respondWidth Responds to the fetch event
     e.respondWith(
 
