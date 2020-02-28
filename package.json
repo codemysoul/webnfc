@@ -1,7 +1,7 @@
 {
   "name": "webnfc",
   "version": "1.0.0",
-  "description": "Open source NFC Reader & Writer. Read and write NFC tags online.",
+  "description": "Open source NFC Reader & Writer. Read and write NFC tags online, and offline.",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
