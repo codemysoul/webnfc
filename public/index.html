@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- SEO REALTED STUFF -->
+    <meta name="description" content='Open source NFC Reader & Writer. Read and write NFC tags online.'>
+    <meta property="og:description" content='Open source NFC Reader & Writer. Read and write NFC tags online.'>
+    <meta name="twitter:description" content='Open source NFC Reader & Writer. Read and write NFC tags online.'>
+
+    <title>NFC Reader & Writer</title>
+    <meta property="og:title" content="NFC Reader & Writer">
+    <meta name="twitter:title" content="NFC Reader & Writer">
+
+    <meta property="og:image" content="https://webnfc.app/assets/og.jpg">
+    <meta name="twitter:image" content="https://webnfc.app/assets/og.jpg">
+
+    <meta property="og:site_name" content="WebNFC">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://webnfc.app">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:creator" content="@codemysoul">
+
+    <!-- APP THEMING AND WEB APP CONFIGURATIONS -->
+    <meta name="theme-color" content="#1a73e8">
+    <meta name="msapplication-navbutton-color" content="#1a73e8">
+    <meta name="msapplication-TileColor" content="#ffffff">
+
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="shortcut icon" href="assets/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/splash/apple-icon-180.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="assets/splash/apple-icon-167.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/splash/apple-icon-152.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/splash/apple-icon-120.png">
+    <meta name="msapplication-TileImage" content="assets/icons/android-chrome-192x192.png">
+    <link rel="mask-icon" href="assets/icons/safari-pinned-tab.svg" color="#848d9c">
+
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="msapplication-starturl" content="/">
+
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="initial-scale=1, minimum-scale=1, width=device-width, height=device-height">
+
+    <link rel="manifest" href="manifest.webmanifest">
+    <meta charset="UTF-8">
+
+    <!-- SPLASH SCREEN ICONS -->
+    <!-- GENERATED WITH https://github.com/onderceylan/pwa-asset-generator - THANKS -->
+    <link rel="apple-touch-startup-image" href="assets/splash/apple-splash-2048-2732.png" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+    <link rel="apple-touch-startup-image" href="assets/splash/apple-splash-2732-2048.png" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+    <link rel="apple-touch-startup-image" href="assets/splash/apple-splash-1668-2388.png" media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+    <link rel="apple-touch-startup-image" href="assets/splash/apple-splash-2388-1668.png" media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+    <link rel="apple-touch-startup-image" href="assets/splash/apple-splash-1668-2224.png" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+    <link rel="apple-touch-startup-image" href="assets/splash/apple-splash-2224-1668.png" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+    <link rel="apple-touch-startup-image" href="assets/splash/apple-splash-1536-2048.png" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+    <link rel="apple-touch-startup-image" href="assets/splash/apple-splash-2048-1536.png" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+    <link rel="apple-touch-startup-image" href="assets/splash/apple-splash-1242-2688.png" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+    <link rel="apple-touch-startup-image" href="assets/splash/apple-splash-2688-1242.png" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)">
+    <link rel="apple-touch-startup-image" href="assets/splash/apple-splash-1125-2436.png" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+    <link rel="apple-touch-startup-image" href="assets/splash/apple-splash-2436-1125.png" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)">
+    <link rel="apple-touch-startup-image" href="assets/splash/apple-splash-828-1792.png" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+    <link rel="apple-touch-startup-image" href="assets/splash/apple-splash-1792-828.png" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+    <link rel="apple-touch-startup-image" href="assets/splash/apple-splash-1242-2208.png" media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+    <link rel="apple-touch-startup-image" href="assets/splash/apple-splash-2208-1242.png" media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)">
+    <link rel="apple-touch-startup-image" href="assets/splash/apple-splash-750-1334.png" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+    <link rel="apple-touch-startup-image" href="assets/splash/apple-splash-1334-750.png" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+    <link rel="apple-touch-startup-image" href="assets/splash/apple-splash-640-1136.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+    <link rel="apple-touch-startup-image" href="assets/splash/apple-splash-1136-640.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+
+    <!-- STYLES -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <img id="logo" src="assets/logo.svg" title="NFC">
+        <div id="status"></div>
+    </header>
+    <div id="main">
+        <div id="default" class="active">
+            <h1 id="title">NFC Reader & Writer</h1>
+            <p id="description">Open source NFC Reader & Writer. Read and write NFC tags online.</p>
+            <div class="content-card">
+                <h2 class="content-card-title">Instructions</h2>
+                <div class="content-card-description">
+                    <p><b>Step 1 - </b>Make sure your device supports NFC and that NFC option is turned on from your device settings.</p>
+                    <p><b>Step 2 - </b>Make sure your browser supports reading and writing NFC tags. For the best support, use the latest version of Chrome (Beta).</p>
+                    <p><b>Step 3 - </b>Tap "Enable NFC" from the top-right corner of this page. A popup should open, asking for your permission to use your device NFC. Grant permission.</p>
+                    <p><b>Step 4 - </b>Scan any NFC tag with your device, with this page open.</p>
+                    <p><b>Step 5 - </b>If a tag was read succesfully, you should see a new page/popup that displays the current content of the tag you just read.</p>
+                    <p><b>Step 6 - </b>After a succesfull read-operation, you have the option to overwrite the tag. Fill out the details you would like to write to the tag, and press "Start write" -button. Now scan the same tag again, and this time it should try to overwrite the tag content.</p>
+                    <br>
+                    <h3 class="content-card-subtitle">Supported operations</h3>
+                    <br>
+                    <p><b>Supported read operations - </b>Text and URL -record types.</p>
+                    <p><b>Supported write operations - </b>Text and URL -record types.</p>
+                </div>
+            </div>
+            <div class="content-card">
+                <h2 class="content-card-title">What is NFC?</h2>
+                <div class="content-card-description">
+                    <p>Near Field Communication (NFC) enables wireless communication between two devices at close proximity, usually less than a few centimeters. NFC is an international standard (ISO/IEC 18092) defining an interface and protocol for simple wireless interconnection of closely coupled devices operating at 13.56 MHz <i>(<a href="https://w3c.github.io/web-nfc/" target="_blank" rel="noopener" title="Web NFC">source</a>)</i>.</p>
+                </div>
+            </div>
+            <div class="content-card">
+                <h2 class="content-card-title">NFC support for web</h2>
+                <div class="content-card-description">
+                    <p>NFC support is still very limited in web. For the best support, use an Android device with Chrome (Beta) version greater than 81.</p>
+                    <br>
+                    <p>To test the reading and writing of NFC tags, you might need to turn on the WebNFC-flag on for Chrome.</p>
+                    <br>
+                    <img src="assets/guide.png" style="max-width: 100%;" title="WebNFC Chrome flag">
+                </div>
+            </div>
+        </div>
+        <div id="scan">
+            <div class="scan-content">
+                <div id="scan-title">
+                    <p><span id="scan-type-title"></span> tag detected!</p>
+                    <img src="assets/close.svg" id="scan-close" onclick="closeScan()">
+                </div>
+                <div id="message"></div>
+                <form id="overwrite">
+                    <p id="overwrite-description">What would you like to write to this tag?</p>
+                    <div id="overwrite-radio-group">
+                        <input type="radio" class="active" checked="checked" id="radio-text" name="overwrite-radio" value="text" onclick="handleOverwriteSelection(this);">
+                        <label for="radio-text">Text</label>
+                        <input type="radio" id="radio-url" name="overwrite-radio" value="url" onclick="handleOverwriteSelection(this);">
+                        <label for="radio-url">URL</label>
+                    </div>
+                    <textarea class="overwrite-content" id="overwrite-text" placeholder="Write text"></textarea>
+                    <input class="overwrite-content" type="text" id="overwrite-url" placeholder="Write url">
+                    <br>
+                    <div class="overwrite-bottom">
+                        <button type="button" id="start-write" onclick="startWrite()">Start write</button>
+                        <p id="writing-text">Waiting for tag to write!</p>
+                        <button id="cancel-write" onclick="cancelWrite()">Cancel</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>Built by <a href="https://codemysoul.com" target="_blank" rel="noopener">Codemysoul</a></p>
+        <p>Thanks for <a href="https://w3c.github.io/web-nfc/" target="_blank" rel="noopener">Web NFC community</a></p>
+        <p>Code available at <a href="https://github.com/codemysoul/webnfc" target="_blank" rel="noopener">Github</a></p>
+    </footer>
+    <script src="script.js"></script>
+    <noscript>You must have JavaScript enabled to use this app.</noscript>
+</body>
+
+</html>

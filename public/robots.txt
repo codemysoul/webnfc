@@ -1,0 +1,3 @@
+Sitemap: https://webnfc.app/sitemap.xml
+User-agent: *
+Disallow:

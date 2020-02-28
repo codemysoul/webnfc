@@ -1,0 +1,29 @@
+{
+  "name": "webnfc",
+  "version": "1.0.0",
+  "description": "Open source NFC Reader & Writer. Read and write NFC tags online.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codemysoul/webnfc.git"
+  },
+  "keywords": [
+    "NFC",
+    "Open source",
+    "NFC Reader",
+    "NFC Writer",
+    "WebNFC"
+  ],
+  "author": "codemysoul",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/codemysoul/webnfc/issues"
+  },
+  "homepage": "https://github.com/codemysoul/webnfc#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

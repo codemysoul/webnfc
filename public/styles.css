@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+}
+
+header {
+  height: 30px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.24), 0 0 2px rgba(0, 0, 0, 0.12);
+  padding: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#logo {
+  width: 30px;
+  height: 30px;
+}
+
+#status {
+  font-weight: bold;
+}
+
+#main {
+  padding: 15px;
+  min-height: calc(100vh - 180px);
+}
+
+#title {
+  margin-bottom: 15px;
+}
+
+#description {
+  margin-bottom: 15px;
+}
+
+.content-card {
+  border: 1px solid rgba(0, 0, 0, 0.03);
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.24), 0 0 2px rgba(0, 0, 0, 0.12);
+  max-width: 720px;
+  margin-bottom: 15px;
+}
+
+.content-card-title {
+  padding: 15px;
+  background: rgba(0, 0, 0, 0.03);
+}
+
+.content-card-description {
+  padding: 15px;
+}
+
+footer {
+  height: 60px;
+  padding: 15px;
+  border-top: 1px solid rgba(0, 0, 0, 0.03);
+  background: rgba(0, 0, 0, 0.03);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+#default {
+  display: none;
+  flex-direction: column;
+}
+
+#default.active {
+  display: flex;
+}
+
+#scan {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#scan.active {
+  display: flex;
+}
+
+#scan-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#scan-close {
+  width: 25px;
+  height: 25px;
+}
+
+#message {
+  display: none;
+  border: 1px solid rgba(0, 0, 0, 0.03);
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.24), 0 0 2px rgba(0, 0, 0, 0.12);
+  margin-top: 15px;
+  padding: 15px;
+  background: rgba(0, 0, 0, 0.03);
+}
+
+#message.active {
+  display: block;
+}
+
+.scan-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+#overwrite {
+  display: none;
+}
+
+#overwrite.active {
+  display: block;
+}
+
+#overwrite-description {
+  padding-top: 15px;
+}
+
+#overwrite-radio-group {
+  padding: 15px 0;
+}
+
+.overwrite-content {
+  display: none;
+  width: 100%;
+}
+
+.overwrite-content.active {
+  display: block;
+}
+
+.overwrite-bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#writing-text,
+#cancel-write {
+  display: none;
+}
+
+#writing-text.active,
+#cancel-write.active {
+  display: block;
+}
